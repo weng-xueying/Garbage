@@ -1,0 +1,23 @@
+<!--home/home.wxml-->
+
+<view bindtap='bindLocation' style="display: flex;flex-direction: row;align-items: center;">
+  <icon class="iconfont icon-home"></icon>
+  <text style="font-size: 30rpx;">苏州</text>
+</view>
+   
+<swiper
+  class="swiper" 
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  current="1"
+  duration="{{duration}}"
+>
+<block wx:for="{{banner}}" wx:key="key">  
+  <swiper-item>  
+    <image mode="widthFix" src="{{item.url}}"/>  
+  </swiper-item>  
+</block>
+</swiper>
+
+
