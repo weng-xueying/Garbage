@@ -1,18 +1,21 @@
 <!--home/home.wxml-->
-
-<view bindtap='bindLocation' style="display: flex;flex-direction: row;align-items: center;">
-  <icon class="iconfont icon-home"></icon>
-  <text style="font-size: 30rpx;">苏州</text>
+<view class='nav-wrap' style='height: {{height*2 + 30}}px;'>
+  <view class='nav-title' style='line-height: {{height*2 + 44}}px;'>首页</view>
+  <view style='display: flex; justify-content: space-around;flex-direction: column'>
+    <view class='nav-capsule' style='height: {{height*2 + 44}}px;'>
+      <view style="display: flex;flex-direction: row;align-items:center;">
+        <text style="font-size: 32rpx;">苏州</text>
+        <icon class="iconfont icon-address"></icon>
+      </view>
+    </view>
+  </view>
+</view>
+<view style='margin-top: {{height*2+25}}px'>
+  <searchbar isnavigator="{{true}}"></searchbar>
 </view>
    
-<swiper
-  class="swiper" 
-  indicator-dots="{{indicatorDots}}"
-  autoplay="{{autoplay}}"
-  interval="{{interval}}"
-  current="1"
-  duration="{{duration}}"
->
+<swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}"
+  interval="{{interval}}" current="1" duration="{{duration}}">
 <block wx:for="{{banner}}" wx:key="key">  
   <swiper-item>  
     <image mode="widthFix" src="{{item.url}}"/>  

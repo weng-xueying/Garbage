@@ -3,7 +3,9 @@
     "pages/home/home",
     "pages/user/user",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "components/searchbar/searchbar",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,8 +15,7 @@
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
-
- "tabBar": {
+  "tabBar": {
     "color": "#515151",
     "selectedColor": "#1296db",
     "list": [
@@ -38,5 +39,4 @@
       }
     ]
   }
-
 }

@@ -13,18 +13,72 @@
 }
 @font-face {
   font-family: 'iconfont';  /* project id 2220712 */
-  src: url('//at.alicdn.com/t/font_2220712_5fja8wg1e3n.eot');
-  src: url('//at.alicdn.com/t/font_2220712_5fja8wg1e3n.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_2220712_5fja8wg1e3n.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_2220712_5fja8wg1e3n.woff') format('woff'),
-  url('//at.alicdn.com/t/font_2220712_5fja8wg1e3n.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_2220712_5fja8wg1e3n.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_2220712_f3o6xk53uxq.eot');
+  src: url('//at.alicdn.com/t/font_2220712_f3o6xk53uxq.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_2220712_f3o6xk53uxq.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_2220712_f3o6xk53uxq.woff') format('woff'),
+  url('//at.alicdn.com/t/font_2220712_f3o6xk53uxq.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_2220712_f3o6xk53uxq.svg#iconfont') format('svg');
 }
 .iconfont{
   font-family:'iconfont';
-  font-size:40px;
-  color: #41be57;
+  font-size:25px;
+  color:#1e82d2;
 }
-.icon-home::before{
-  content: '\e627';
+.icon-address::before{
+  content: '\e635';
+  color: #fff;
+  font-size: 48rpx;
+}
+
+.nav-wrap {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #1e82d2;
+  color: #fff;
+  z-index: 9999999;
+}
+/* 标题要居中 */
+.nav-title {
+  position: absolute;
+  text-align: center;
+  max-width: 400rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 35rpx;
+  color: #fff;
+  font-weight: 500;
+}
+
+.nav-capsule {
+  display: flex;
+  align-items: center;
+  margin-left: 30rpx;
+  justify-content: space-between;
+  height: 100%;
+}
+pages {
+  position: relative;
+  z-index: 9999998;
+  background: #fff;
+}
+
+.navbar-v-line {
+  width: 1px;
+  height: 32rpx;
+  background-color: #e5e5e5;
+}
+
+.back-pre {
+  width: 32rpx;
+   height: 36rpx;
+  margin-top: 4rpx;
+  padding: 10rpx;
 }
