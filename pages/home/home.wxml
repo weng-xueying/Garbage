@@ -10,7 +10,7 @@
     </view>
   </view>
 </view>
-<view style='margin-top: {{height*2+25}}px'>
+<view style='margin-top: {{height*2+24}}px'>
   <searchbar isnavigator="{{true}}"></searchbar>
 </view>
    
