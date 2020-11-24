@@ -1,36 +1,46 @@
 /* home/home.wxss */
-.searchbar{
-  background-color:#41be57;
-  padding:20rpx;
-}
-.swiper {
-  background: aqua;
-  height: 320rpx;
-  width: 100%;
-}
-.swiper image{
-  width: 100%;
-}
+
+/*自定义icon图标*/
 @font-face {
   font-family: 'iconfont';  /* project id 2220712 */
-  src: url('//at.alicdn.com/t/font_2220712_f3o6xk53uxq.eot');
-  src: url('//at.alicdn.com/t/font_2220712_f3o6xk53uxq.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_2220712_f3o6xk53uxq.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_2220712_f3o6xk53uxq.woff') format('woff'),
-  url('//at.alicdn.com/t/font_2220712_f3o6xk53uxq.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_2220712_f3o6xk53uxq.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_2220712_q67tcn4ktvm.eot');
+  src: url('//at.alicdn.com/t/font_2220712_q67tcn4ktvm.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_2220712_q67tcn4ktvm.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_2220712_q67tcn4ktvm.woff') format('woff'),
+  url('//at.alicdn.com/t/font_2220712_q67tcn4ktvm.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_2220712_q67tcn4ktvm.svg#iconfont') format('svg');
 }
 .iconfont{
   font-family:'iconfont';
   font-size:25px;
-  color:#1e82d2;
 }
 .icon-address::before{
   content: '\e635';
   color: #fff;
   font-size: 48rpx;
 }
+.icon-scan::before{
+  content: '\e626';
+  color: #fff;
+  font-size: 48rpx;
+}
+.icon-test::before{
+  content: '\e636';
+  color: #fff;
+  font-size: 48rpx;
+}
+.icon-sign::before{
+  content: '\e7b6';
+  color: #fff;
+  font-size: 48rpx;
+}
+.icon-list::before{
+  content: '\e661';
+  color: #fff;
+  font-size: 48rpx;
+}
 
+/*自定义导航栏*/
 .nav-wrap {
   position: fixed;
   width: 100%;
@@ -39,7 +49,7 @@
   color: #fff;
   z-index: 9999999;
 }
-/* 标题要居中 */
+/* 标题居中 */
 .nav-title {
   position: absolute;
   text-align: center;
@@ -64,11 +74,6 @@
   justify-content: space-between;
   height: 100%;
 }
-pages {
-  position: relative;
-  z-index: 9999998;
-  background: #fff;
-}
 
 .navbar-v-line {
   width: 1px;
@@ -81,4 +86,36 @@ pages {
    height: 36rpx;
   margin-top: 4rpx;
   padding: 10rpx;
+}
+/*轮播图*/
+.swiper {
+  background: aqua;
+  height: 320rpx;
+  width: 100%;
+}
+.swiper image{
+  width: 100%;
+}
+
+/*功能图标*/
+.flex-icon{
+  padding: 30rpx 15rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.hover_btn{
+  opacity: 0.8;
+  transform: scale(0.95,0.95)
+}
+.text_center{
+  text-align: center;
+}
+
+.radius{
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  background: #1e82d2;
 }

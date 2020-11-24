@@ -23,4 +23,31 @@
 </block>
 </swiper>
 
+<view class="flex-icon">
+  <view class="text_center">
+    <navigator url="../logs/logs">
+      <view class="radius" hover-class="hover_btn"></view>
+    </navigator>
+    <text>识图</text>
+  </view>
+  <view class="text_center">
+    <navigator url="../logs/logs">
+      <view class="radius" hover-class="hover_btn"></view>
+    </navigator>
+    <text>测试</text>
+  </view>
+  <view class="text_center">
+    <navigator url="../logs/logs">
+      <view class="radius" hover-class="hover_btn"></view>
+    </navigator>
+    <text>签到</text>
+  </view>
+  <view class="text_center">
+    <navigator url="../logs/logs">
+      <view class="radius" hover-class="hover_btn"></view>
+    </navigator>
+    <text>排名</text>
+  </view>
+</view>
+
 

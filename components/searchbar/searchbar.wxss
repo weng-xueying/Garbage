@@ -8,6 +8,9 @@
   height: 70rpx;
   background:#fff;
   border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
 }
 .search-input-group{
   width: 100%;
@@ -21,4 +24,27 @@
   min-height: 50rpx;
   height: 50rpx;
   font-size: 32rpx;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 2220712 */
+  src: url('//at.alicdn.com/t/font_2220712_qroise9erx.eot');
+  src: url('//at.alicdn.com/t/font_2220712_qroise9erx.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_2220712_qroise9erx.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_2220712_qroise9erx.woff') format('woff'),
+  url('//at.alicdn.com/t/font_2220712_qroise9erx.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_2220712_qroise9erx.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:'iconfont';
+  font-size:25px;
+  color: lightslategre;
+}
+.icon-search::before{
+  content: '\e615';
+  font-size: 48rpx;
+  padding-left: 35rpx;
+}
+.icon-text{
+  font-size: small;
+  color: lightslategrey;
 }

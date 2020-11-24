@@ -1,6 +1,8 @@
 <!--components/searchba/searchba.wxml-->
 <view class="searchbar">
   <navigator wx:if="{{isnavigator}}" url='/pages/search/search' class="search-navigator">
+    <icon class="iconfont icon-search"></icon>
+    <text class="icon-text">搜索垃圾查看对应分类</text>
   </navigator>
   <view wx:else class="search-input-group">
     <input class="search-input" placeholder="搜索">
