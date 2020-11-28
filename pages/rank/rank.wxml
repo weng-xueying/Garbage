@@ -1,0 +1,35 @@
+<!--pages/rank/rank.wxml-->
+<view class="gradual">
+  <view class="flexcon">
+    <text class="texla">积分排行榜</text>
+    <text class="texsm">继续努力，你也会成为榜单第1人!</text>
+  </view>
+
+  <view class="mycard">
+    <text class="myrank">我的排名:270</text>
+    <text class="myscore">当前积分:5</text>
+  </view>
+
+  <view class="card">
+    <view wx:for="{{user_Rank}}" wx:key="name" wx:for-index="index" class="card_box">
+      <view class="number">
+        <text>{{index+1}}</text>
+      </view>
+      <view class="box_left">
+        <view class="radius"></view>
+      </view>
+      <view class="box_right">
+        <text class="text_la">{{item.name}}</text>
+      </view>
+      <view class="box_end">
+        <text>{{item.score}}</text>
+      </view>
+
+    </view>
+  </view>
+
+
+</view> 
+
+
+

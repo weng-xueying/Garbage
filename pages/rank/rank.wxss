@@ -1,0 +1,102 @@
+/* pages/rank/rank.wxss */
+/*全局*/
+.gradual{
+  height: 1300rpx;
+  background: linear-gradient(#1e82d2, white); 
+}
+/*head*/
+.flexcon{
+  padding: 20rpx 80rpx 10rpx 80rpx;
+}
+.texla{
+  display: block;
+  padding-bottom: 25rpx;
+  font-size: 48rpx;
+  color: white;
+}
+.texsm{
+  display: block;
+  color: white;
+  font-size: 35rpx;
+}
+.mycard{
+  border-radius: 15rpx;
+  box-shadow: #1e82d2 1rpx 0rpx 40rpx 3rpx; 
+  margin: 20rpx auto;
+  width: 640rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 33rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.myrank{
+  padding-left: 40rpx;
+}
+.myscore{
+  padding-right: 40rpx;
+}
+.card{
+  border-radius: 30rpx;
+  box-shadow: #1e82d2 1rpx 0rpx 40rpx 3rpx; 
+  margin: 0 auto;
+  width: 640rpx;
+  height: 1000rpx;
+  background-color: white;
+  font-size: small;
+}
+.number{
+  padding:0 20rpx;
+}
+.card_box {
+  border-bottom: 1px solid #ddd;
+  padding: 28rpx 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+.box_left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.box_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 30rpx;
+  flex-basis: 48%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp:1;
+  -webkit-box-orient:vertical;
+}
+.box_end{
+  margin-left: auto;
+  margin-right: 15rpx;
+}
+.text_la {
+  font-size: 35rpx;
+}
+.text_sm {
+  display: block;
+  width: 300rpx;
+  font-size: 30rpx;
+  word-wrap: break-word;
+  color: gray;
+  margin-top: 10rpx;
+}
+
+.radius{
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  background: #1e82d2;
+}
+

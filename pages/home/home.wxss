@@ -3,12 +3,12 @@
 /*自定义icon图标*/
 @font-face {
   font-family: 'iconfont';  /* project id 2220712 */
-  src: url('//at.alicdn.com/t/font_2220712_q67tcn4ktvm.eot');
-  src: url('//at.alicdn.com/t/font_2220712_q67tcn4ktvm.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_2220712_q67tcn4ktvm.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_2220712_q67tcn4ktvm.woff') format('woff'),
-  url('//at.alicdn.com/t/font_2220712_q67tcn4ktvm.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_2220712_q67tcn4ktvm.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_2220712_c0aneio4gcf.eot');
+  src: url('//at.alicdn.com/t/font_2220712_c0aneio4gcf.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_2220712_c0aneio4gcf.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_2220712_c0aneio4gcf.woff') format('woff'),
+  url('//at.alicdn.com/t/font_2220712_c0aneio4gcf.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_2220712_c0aneio4gcf.svg#iconfont') format('svg');
 }
 .iconfont{
   font-family:'iconfont';
@@ -22,22 +22,26 @@
 .icon-scan::before{
   content: '\e626';
   color: #fff;
-  font-size: 48rpx;
+  font-size: 70rpx;
+  line-height: 110rpx;
 }
 .icon-test::before{
   content: '\e636';
   color: #fff;
-  font-size: 48rpx;
+  font-size: 70rpx;
+  line-height: 110rpx;
 }
-.icon-sign::before{
-  content: '\e7b6';
+.icon-voice::before{
+  content: '\e604';
   color: #fff;
-  font-size: 48rpx;
+  font-size: 72rpx;
+  line-height: 110rpx;
 }
-.icon-list::before{
+.icon-rank::before{
   content: '\e661';
   color: #fff;
-  font-size: 48rpx;
+  font-size: 70rpx;
+  line-height: 110rpx;
 }
 
 /*自定义导航栏*/
@@ -83,18 +87,17 @@
 
 .back-pre {
   width: 32rpx;
-   height: 36rpx;
+  height: 36rpx;
   margin-top: 4rpx;
   padding: 10rpx;
 }
 /*轮播图*/
 .swiper {
-  background: aqua;
-  height: 320rpx;
   width: 100%;
+  background:#1e82d2;
 }
-.swiper image{
-  width: 100%;
+.img{
+  display: inline;
 }
 
 /*功能图标*/
@@ -105,10 +108,6 @@
   justify-content: space-around;
 }
 
-.hover_btn{
-  opacity: 0.8;
-  transform: scale(0.95,0.95)
-}
 .text_center{
   text-align: center;
 }
@@ -118,4 +117,37 @@
   height: 110rpx;
   border-radius: 50%;
   background: #1e82d2;
+}
+
+.hover_btn{
+  opacity: 0.8;
+  transform: scale(0.95,0.95)
+}
+
+.swiper-tab{
+  width: 100%;  
+  text-align: center;  
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #EDEDED;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.tab-item{
+  flex: 1;
+  font-size: 35rpx;  
+  display: inline-block;   
+  color: #777777;
+}
+.on{
+  color: #1e82d2;  
+  border-bottom: 5rpx solid #1e82d2;
+}
+
+.swiper-items{
+height:100%;
+text-align:center;
+}
+.swiper-box{
+  height: 700rpx;
 }

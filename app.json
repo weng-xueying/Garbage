@@ -1,17 +1,26 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/home/home",
     "pages/user/user",
-    "pages/index/index",
-    "pages/logs/logs",
     "components/searchbar/searchbar",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/rank/rank",
+    "pages/voice/voice",
+    "pages/scan/scan",
+    "pages/learn/learn",
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#1e82d2",
     "navigationBarTitleText": "分门别类",
     "navigationBarTextStyle": "white"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
@@ -26,7 +35,7 @@
         "selectedIconPath": "/image/icon/home_end.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/learn/learn",
         "text": "百科",
         "iconPath": "/image/icon/learn_start.png",
         "selectedIconPath": "/image/icon/learn_end.png"

@@ -1,4 +1,27 @@
 /**index.wxss**/
+.container{
+  padding:160rpx 70rpx;
+}
+.radius{
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  background: #aaa;
+}
+.explain{
+  padding-top: 50rpx;
+  padding-bottom: 80rpx;
+  text-align: center;
+  font-size: small;
+  color: #aaa;
+}
+.btn{
+  font-size: 37rpx;
+  font-weight: 500;
+  background-color: #1e82d2;
+  color: white;
+  border-radius: 20px;
+}
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -14,8 +37,4 @@
 
 .userinfo-nickname {
   color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
 }

@@ -1,6 +1,15 @@
 //app.js
 App({
   onLaunch: function () {
+    // 登录缓存
+    let login = wx.getStorageSync('login') || '';
+    console.log("111"+login)
+    if(login!='') {
+       wx.switchTab({
+          url: '/pages/home/home',
+       })
+    }
+
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -34,6 +43,6 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
   }
 })

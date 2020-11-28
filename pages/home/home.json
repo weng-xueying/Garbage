@@ -2,6 +2,8 @@
   "navigationStyle": "custom",
   "navigationBarTextStyle": "black",
   "usingComponents": {
-    "searchbar":"/components/searchbar/searchbar"
+    "searchbar":"/components/searchbar/searchbar",
+    "paging":"/components/paging/paging",
+    "paging_two":"/components/paging_two/paging_two"
   }
 }

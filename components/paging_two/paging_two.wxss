@@ -1,0 +1,35 @@
+/* components/paging_two/paging_two.wxss */
+.img{
+  border-radius:10rpx;
+  width: 280rpx;
+  height: 200rpx;
+}
+.spec_name {
+  border-bottom: 1px solid #ddd;
+  padding: 12rpx 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-start;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+.spec_left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.spec_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 40rpx;
+}
+.spec_content_desc {
+  display: block;
+  width: 370rpx;
+  font-size: 30rpx;
+  word-wrap: break-word;
+  color: gray;
+  margin-top: 10rpx;
+}

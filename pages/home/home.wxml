@@ -1,4 +1,6 @@
 <!--home/home.wxml-->
+
+<!--自定义导航栏-->
 <view class='nav-wrap' style='height: {{height*2 + 30}}px;'>
   <view class='nav-title' style='line-height: {{height*2 + 44}}px;'>首页</view>
   <view style='display: flex; justify-content: space-around;flex-direction: column'>
@@ -10,44 +12,58 @@
     </view>
   </view>
 </view>
+
+<!--搜索组件-->
 <view style='margin-top: {{height*2+24}}px'>
   <searchbar isnavigator="{{true}}"></searchbar>
 </view>
-   
+
+<!--轮播图-->
 <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}"
   interval="{{interval}}" current="1" duration="{{duration}}">
-<block wx:for="{{banner}}" wx:key="key">  
-  <swiper-item>  
-    <image mode="widthFix" src="{{item.url}}"/>  
-  </swiper-item>  
-</block>
+  <block wx:for="{{banner}}" wx:key="key">  
+    <swiper-item>  
+      <image class="img" mode="scaleToFill" src="{{item.url}}"/> 
+    </swiper-item>  
+  </block>
 </swiper>
 
+<!--图标导航-->
 <view class="flex-icon">
   <view class="text_center">
-    <navigator url="../logs/logs">
-      <view class="radius" hover-class="hover_btn"></view>
-    </navigator>
-    <text>识图</text>
+      <view class="radius" bindtap="jump_scan" hover-class="hover_btn">
+        <icon class="iconfont icon-scan"></icon>
+      </view>
+    <text class="text_font">识图</text>
   </view>
   <view class="text_center">
-    <navigator url="../logs/logs">
-      <view class="radius" hover-class="hover_btn"></view>
-    </navigator>
+      <view class="radius" bindtap="jump_voice" hover-class="hover_btnvoice">
+        <icon class="iconfont icon-voice"></icon>
+      </view>
+    <text>语音</text>
+  </view>
+  <view class="text_center">
+    <view class="radius" bindtap="jump_test" hover-class="hover_btn">
+      <icon class="iconfont icon-test"></icon>
+    </view>
     <text>测试</text>
   </view>
   <view class="text_center">
-    <navigator url="../logs/logs">
-      <view class="radius" hover-class="hover_btn"></view>
-    </navigator>
-    <text>签到</text>
-  </view>
-  <view class="text_center">
-    <navigator url="../logs/logs">
-      <view class="radius" hover-class="hover_btn"></view>
-    </navigator>
+      <view class="radius" bindtap="jump_rank" hover-class="hover_btn">
+        <icon class="iconfont icon-rank"></icon>
+      </view>
     <text>排名</text>
   </view>
 </view>
+
+<view class="swiper-tab">
+  <view class="tab-item {{currentTab==0?'on':''}}" data-current="0" bindtap="switchNav">文章</view>
+  <view class="tab-item {{currentTab==1?'on':''}}" data-current="1" bindtap="switchNav">视频</view>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" data-current="{{currentTab}}" bindchange="switchNav2">
+<swiper-item><paging></paging></swiper-item>
+<swiper-item><paging_two></paging_two></swiper-item>
+</swiper>
 
 

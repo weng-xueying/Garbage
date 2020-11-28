@@ -4,17 +4,11 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
+
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
@@ -42,13 +36,27 @@ Page({
         }
       })
     }
+   if(wx.getStorageSync('login') !="") {
+        setTimeout(() => {
+          wx.switchTab({
+              url: '../home/home',
+           })
+        },3000)
+      }
   },
   getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
+    app.globalData.userInfo = e.detail.userInfo;
+    //将获取的数据存入缓存
+    wx.setStorageSync('login', e.detail.userInfo)
+    console.log(e.detail.userInfo);
     this.setData({
       userInfo: e.detail.userInfo,
-      hasUserInfo: true
+      hasUserInfo: true,
     })
-  }
+    setTimeout(() => {
+        wx.switchTab({
+            url: '../home/home',
+         })
+    },2000)
+  },
 })
