@@ -36,6 +36,7 @@
     </view>
   </view>
   </navigator>
+  <view class="line"></view>
   <navigator url="../aboutus/aboutus" open-type="navigate">
   <view class="item">
     <view class="title">关与我们</view>

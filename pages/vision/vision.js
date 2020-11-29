@@ -1,4 +1,4 @@
-// pages/scan/scan.js
+// pages/vision/vision.js
 Page({
 
   /**
@@ -7,12 +7,10 @@ Page({
   data: {
 
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
 
   },
 
@@ -63,5 +61,9 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  videoErrorCallback: function(e) {
+    console.log('视频错误信息:')
+    console.log(e.detail.errMsg)
   }
 })

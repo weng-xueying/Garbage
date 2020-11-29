@@ -10,16 +10,21 @@ Page({
     duration:300,//滑动动画时长
     true:true,
     banner:[
-      {url:'../../image/1.jpg'},
-      {url:'../../image/2.jpeg'},
-      {url:'../../image/3.jpeg'}
+      {url:'../../image/1.png'},
+      {url:'../../image/2.png'},
+      {url:'../../image/3.png'}
     ],
     currentTab: 0,
   },
   jump_scan:function(options){
-    wx.navigateTo({
-      url: '../scan/scan',
+    wx.showToast({
+      title: '该功能未上线',
+      icon: 'none',
+      duration: 3000//持续的时间
     })
+    // wx.navigateTo({
+    //   url: '../scan/scan',
+    // })
   },
   jump_test:function(options){
     wx.navigateTo({
@@ -27,13 +32,28 @@ Page({
     })
   },
   jump_voice:function(options){
-    wx.navigateTo({
-      url: '../voice/voice',
+    wx.showToast({
+      title: '该功能未上线',
+      icon: 'none',
+      duration: 3000//持续的时间
     })
+    // wx.navigateTo({
+    //   url: '../voice/voice',
+    // })
   },
   jump_rank:function(options){
     wx.navigateTo({
       url: '../rank/rank',
+    })
+  },
+  jump_article:function(options){
+    wx.navigateTo({
+      url: '/pages/article/article',
+    })
+  },
+  jump_vision:function(options){
+    wx.navigateTo({
+      url: '/pages/vision/vision',
     })
   },
   /**
@@ -99,7 +119,7 @@ Page({
 
   },
   switchNav: function(res) {
-    console.log(res);
+    // console.log(res);
     if (this.data.currentTab === res.target.dataset.current) {
       return false;
     } else {

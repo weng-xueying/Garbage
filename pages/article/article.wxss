@@ -1,0 +1,22 @@
+/* pages/article/article.wxss */
+.box{
+  display: block;
+  width: 90%;
+  margin: 40rpx auto;
+}
+.box_title{
+  text-align: center;
+}
+.title{
+  font-size: 46rpx;
+  display: block;
+  margin: 40rpx auto;
+}
+.content{
+  font-size: 30rpx;
+  margin: 20rpx auto;
+  display: block;
+  font-size: 14px;
+  text-indent: 2em;
+  letter-spacing: 1px;
+}

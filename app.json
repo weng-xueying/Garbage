@@ -9,7 +9,10 @@
     "pages/voice/voice",
     "pages/scan/scan",
     "pages/learn/learn",
-    "pages/test/test"
+    "pages/test/test",
+    "pages/article/article",
+    "pages/vision/vision",
+    "components/ten/ten"
   ],
   "window": {
     "backgroundTextStyle": "light",

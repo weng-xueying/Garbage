@@ -1,4 +1,4 @@
-/* pages/test/test.wxss */
+/* components/ten/ten.wxss */
 .num{
   display: block;
   margin:40rpx 50rpx 50rpx 50rpx;
@@ -22,7 +22,7 @@
   margin: 20rpx auto;
   box-sizing:none;
 }
-.btn-hover{
+.on{
+  color: #1296db;
   border: 1rpx solid #1296db;
-  background-color: #1296db;
 }

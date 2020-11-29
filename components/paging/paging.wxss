@@ -4,7 +4,7 @@
   width: 280rpx;
   height: 200rpx;
 }
-.spec_name {
+.box {
   border-bottom: 1px solid #ddd;
   padding: 12rpx 20rpx;
   display: flex;
@@ -14,18 +14,21 @@
   background-color: #fff;
   border-radius: 10rpx;
 }
-.spec_left {
+.box_left {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.spec_content {
+.box_right {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-left: 40rpx;
+  padding-left: 35rpx;
 }
-.spec_content_desc {
+.text_title{
+  font-size: 35rpx;
+}
+.text_Summary {
   display: block;
   width: 370rpx;
   font-size: 30rpx;

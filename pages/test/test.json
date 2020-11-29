@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "ten":"/components/ten/ten"
+  },
+  "navigationBarTitleText": "小测试"
 }

@@ -1,0 +1,11 @@
+<!--components/ten/ten.wxml-->
+<view>
+<text class="num">{{num}}/10</text>
+  <text class="title">{{title}}属于？</text>
+  <!--data-current唯一标识button-->
+  <button class="btn {{btn_num==0?'on':''}}" bindtap="click" disabled='{{disabled}}' data-current="0">可回收垃圾</button>
+  <button class="btn {{btn_num==1?'on':''}}" bindtap="click" disabled='{{disabled}}' data-current="1">有害垃圾</button>
+  <button class="btn {{btn_num==2?'on':''}}" bindtap="click" disabled='{{disabled}}' data-current="2">厨余垃圾</button>
+  <button class="btn {{btn_num==3?'on':''}}" bindtap="click" disabled='{{disabled}}' data-current="3">其他垃圾</button>
+</view>
+

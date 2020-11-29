@@ -3,7 +3,7 @@ App({
   onLaunch: function () {
     // 登录缓存
     let login = wx.getStorageSync('login') || '';
-    console.log("111"+login)
+//     console.log("111"+login)
     if(login!='') {
        wx.switchTab({
           url: '/pages/home/home',

@@ -1,12 +1,12 @@
 <!--components/paging1/paging.wxml-->
 
-<view bindtap="" wx:for="{{article_List}}" wx:key="key" class="spec_name">
-  <view class="spec_left">
+<view wx:for="{{article_List}}" wx:key="key" class="box">
+  <view class="box_left">
     <image mode="aspectFill" class="img" src="{{item.url}}"></image>
   </view>
-  <view class="spec_content">
-      <text>{{item.title}}</text>
-    <text class="spec_content_desc">{{item.Summary}}</text>
+  <view class="box_right">
+      <text class="text_title">{{item.title}}</text>
+    <text class="text_Summary">{{item.Summary}}</text>
   </view>
 </view>
 

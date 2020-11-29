@@ -16,17 +16,17 @@ Component({
       {
         title:'视频1测试',
         Summary:'如何进行垃圾分类呀？阿巴阿巴，，，这里是文章摘要。。。看我看我在这里',
-        url:'../../image/1.jpg'
+        url:'../../image/1.png'
       },
       {
         title:'阿巴阿巴',
         Summary:'222',
-        url:'../../image/2.jpeg'
+        url:'../../image/2.png'
       },
       {
         title:'想不出来',
         Summary:'333',
-        url:'../../image/3.jpeg'
+        url:'../../image/3.png'
       }
     ]
   },

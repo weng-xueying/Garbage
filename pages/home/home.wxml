@@ -20,7 +20,7 @@
 
 <!--轮播图-->
 <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}"
-  interval="{{interval}}" current="1" duration="{{duration}}">
+  interval="{{interval}}" current="0" duration="{{duration}}" circular="true">
   <block wx:for="{{banner}}" wx:key="key">  
     <swiper-item>  
       <image class="img" mode="scaleToFill" src="{{item.url}}"/> 
@@ -62,8 +62,8 @@
 </view>
 
 <swiper current="{{currentTab}}" class="swiper-box" duration="300" data-current="{{currentTab}}" bindchange="switchNav2">
-<swiper-item><paging></paging></swiper-item>
-<swiper-item><paging_two></paging_two></swiper-item>
+<swiper-item><paging bindtap="jump_article"></paging></swiper-item>
+<swiper-item><paging_two bindtap="jump_vision"></paging_two></swiper-item>
 </swiper>
 
 

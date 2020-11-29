@@ -1,2 +1,37 @@
 <!--pages/test/test.wxml-->
-<text>pages/test/test.wxml</text>
+<view>
+  <!-- <view class="swiper-tab">
+  <view class="tab-item {{currentTab==0?'on':''}}" data-current="0" bindtap="switchNav">文章</view>
+  <view class="tab-item {{currentTab==1?'on':''}}" data-current="1" bindtap="switchNav">视频</view>
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" data-current="{{currentTab}}" bindchange="switchNav2">
+<swiper-item><paging bindtap="jump_article"></paging></swiper-item>
+</swiper> -->
+
+<swiper style="height:{{swiperHeight}}rpx" current="{{number}}">
+  <block wx:for="{{garbage}}" wx:for-index="index" wx:key="title">
+    <swiper-item>
+    <ten title="{{item.title}}" num="{{(index+1)}}" answer="{{item.type}}" bindadd="addion"></ten>
+  </swiper-item>
+  </block>
+</swiper>
+
+
+
+
+<!-- <button class="btn" bindtap="switchNav">有害垃圾</button>
+<view wx:for="{{garbage}}" wx:for-index="index" wx:key="i">
+  <text class="num">{{index+1}}/10</text>
+  <swiper current="{{currentTab}}" duration="300">
+    <swiper-item>{{garbage.title}}</swiper-item>
+  </swiper>
+</view>
+
+  <text class="num">2/10</text>
+  <text class="title">KFC食品包装袋属于？</text>
+  <view wx:for="{{btn}}" wx:key='index'>
+    <button class="btn">{{btn}}</button>
+  </view> -->
+  
+</view>
+
