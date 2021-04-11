@@ -1,15 +1,18 @@
 //app.js
 App({
   onLaunch: function () {
+  // 初始化云开发环境
+  wx.cloud.init({
+    env: 'xiaoweng-garbage-9fiu1sn5f68bcc1'
+  })
     // 登录缓存
-    let login = wx.getStorageSync('login') || '';
-//     console.log("111"+login)
+    let login = wx.getStorageSync('login') ||  ''
+    //     console.log("111"+login)
     if(login!='') {
        wx.switchTab({
           url: '/pages/home/home',
        })
     }
-
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())

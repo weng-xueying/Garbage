@@ -1,2 +1,15 @@
 <!--pages/search/search.wxml-->
-<searchbar></searchbar>
+<view class="search">
+  <view class="search-navigator">
+    <icon class="iconfont icon-search"></icon>
+    <input class="search-input" placeholder="请输入关键字" value="{{inputValue}}" bindinput="blur">
+    </input>
+  </view>
+
+  <view  class='search_result' wx:if="{{inputValue}}">
+    <view class='search-list' wx:for="{{resultList}}" wx:key="searchone" bindtap='detail' data-id='{{item.id}}'>
+      {{item.garbage}}： {{item.category}}
+    </view>
+    <view class='no_more' wx:if="{{resultList.length==0}}">暂无相关内容</view>
+  </view>
+</view>

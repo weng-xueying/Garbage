@@ -16,30 +16,35 @@
 }
 .icon-address::before{
   content: '\e635';
-  color: #fff;
+  color: #303133;
+  /* color: #fff; */
   font-size: 48rpx;
 }
 .icon-scan::before{
   content: '\e626';
-  color: #fff;
+  color: #303133;
+  /* color: #fff; */
   font-size: 70rpx;
   line-height: 110rpx;
 }
 .icon-test::before{
   content: '\e636';
-  color: #fff;
+  color: #303133;
+  /* color: #fff; */
   font-size: 70rpx;
   line-height: 110rpx;
 }
 .icon-voice::before{
   content: '\e604';
-  color: #fff;
+  color: #303133;
+  /* color: #fff; */
   font-size: 72rpx;
   line-height: 110rpx;
 }
 .icon-rank::before{
   content: '\e661';
-  color: #fff;
+  color: #303133;
+  /* color: #fff; */
   font-size: 70rpx;
   line-height: 110rpx;
 }
@@ -49,8 +54,10 @@
   position: fixed;
   width: 100%;
   top: 0;
-  background: #1e82d2;
-  color: #fff;
+  background:white;
+  /* background: #1e82d2; */
+  /* color: #fff; */
+  color: #303133;
   z-index: 9999999;
 }
 /* 标题居中 */
@@ -93,11 +100,17 @@
 }
 /*轮播图*/
 .swiper {
-  width: 100%;
-  background:#1e82d2;
+  padding: 20rpx 20rpx 20rpx 20rpx;
+  border-radius: 20rpx 20rpx 20rpx 20rpx;
+  width: 95%;
+  /* background:#1e82d2; */
 }
 .img{
   display: inline;
+  /* overflow:hidden; */
+  overflow:show;
+  border-radius: 20rpx 20rpx 20rpx 20rpx;
+  transform: translateY(0);
 }
 
 /*功能图标*/
@@ -116,7 +129,9 @@
   width: 110rpx;
   height: 110rpx;
   border-radius: 50%;
-  background: #1e82d2;
+  background: white;
+  box-shadow: 3px 1px 5px #cdcfcf;
+  /* background: #1e82d2; */
 }
 
 .hover_btn{
@@ -151,3 +166,37 @@ text-align:center;
 .swiper-box{
   height: 700rpx;
 }
+
+.card{
+  width: 90%;
+  margin-left: 5%;
+  height: 190rpx;
+  background: white;
+  border-radius: 10rpx;
+  box-shadow: 1px 3px 5px #cdcfcf;
+ }
+
+/* 滚动通知 */
+.news{
+  width: 750rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  white-space: nowrap;
+  /* background: rgb(255, 248, 233); */
+  overflow: hidden;
+}
+.news-desc-roll {
+  margin-left: 20rpx;
+    width: 2092rpx;
+    height: 60rpx;
+    font-size: 30rpx;
+    white-space: nowrap;
+    line-height: 60rpx;
+    color: #999;
+    animation:roll 20s linear infinite;
+}
+ @keyframes roll {
+	  0% {margin-left:700rpx}
+	  100%{margin-left: -2092rpx}
+ }

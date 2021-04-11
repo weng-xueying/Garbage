@@ -56,7 +56,16 @@
   </view>
 </view>
 
-<view class="swiper-tab">
+<view class="card">
+
+</view>
+
+<!-- <view class="news">
+  <view><image src="../../image/xxlb.png" style="width:40rpx;height:40rpx;"></image></view>
+  <view class='news-desc-roll'> 今天垃圾分类了嘛？~~~</view>
+</view> -->
+
+<!-- <view class="swiper-tab">
   <view class="tab-item {{currentTab==0?'on':''}}" data-current="0" bindtap="switchNav">文章</view>
   <view class="tab-item {{currentTab==1?'on':''}}" data-current="1" bindtap="switchNav">视频</view>
 </view>
@@ -64,6 +73,4 @@
 <swiper current="{{currentTab}}" class="swiper-box" duration="300" data-current="{{currentTab}}" bindchange="switchNav2">
 <swiper-item><paging bindtap="jump_article"></paging></swiper-item>
 <swiper-item><paging_two bindtap="jump_vision"></paging_two></swiper-item>
-</swiper>
-
-
+</swiper> -->

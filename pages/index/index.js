@@ -10,6 +10,12 @@ Page({
   },
 
   onLoad: function () {
+    // 调用云函数
+    wx.cloud.callFunction({
+      name:"demo",
+      data:{}
+    })
+   
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

@@ -1,4 +1,5 @@
 {
+  "cloud": true,
   "pages": [
     "pages/index/index",
     "pages/home/home",
@@ -8,11 +9,11 @@
     "pages/rank/rank",
     "pages/voice/voice",
     "pages/scan/scan",
-    "pages/learn/learn",
     "pages/test/test",
     "pages/article/article",
     "pages/vision/vision",
-    "components/ten/ten"
+    "components/ten/ten",
+    "pages/classify/classify"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -38,7 +39,7 @@
         "selectedIconPath": "/image/icon/home_end.png"
       },
       {
-        "pagePath": "pages/learn/learn",
+        "pagePath": "pages/classify/classify",
         "text": "百科",
         "iconPath": "/image/icon/learn_start.png",
         "selectedIconPath": "/image/icon/learn_end.png"

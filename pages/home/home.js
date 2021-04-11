@@ -17,10 +17,14 @@ Page({
     currentTab: 0,
   },
   jump_scan:function(options){
-    wx.showToast({
-      title: '该功能未上线',
-      icon: 'none',
-      duration: 3000//持续的时间
+    wx.showModal({
+      title: '提示',
+      content:'该功能暂未上线，敬请期待',
+      success: function(res){
+        if (res.confirm){
+          console.log('用户点击确定')
+        }
+      }
     })
     // wx.navigateTo({
     //   url: '../scan/scan',
